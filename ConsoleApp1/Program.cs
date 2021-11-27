@@ -1,5 +1,5 @@
 ﻿using System.Data;
-namespace DataTypesCS
+namespace BASIC
 {
     class Program
     {
@@ -7,8 +7,10 @@ namespace DataTypesCS
         {
             Console.WriteLine("please enter a number");
             int num1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("you entered " + num1);
-            Console.WriteLine("yeh hui na baaat");
+            for(int i = 1; i < 11; i++)
+            {
+                Console.WriteLine(num1 + "x" + i + "=" + num1*i);
+            }
         }
     }
 }
